@@ -1,0 +1,13 @@
+1)
+Creați clasa Emplyee cu urmatoarele proprietati:
+- name
+- baseSalary
+- yearsOfExperience
+
+Sa se implementeze metoda calculateSalary() care sa returneze salariul de baza al unui angajat.
+
+2)
+Creati clasa Programmer care sa fie o extindere a clasei Employee avand in plus proprietatea:
+- bonusOverTime
+
+....
