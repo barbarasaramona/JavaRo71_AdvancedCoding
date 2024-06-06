@@ -28,6 +28,7 @@ public class Main {
 //        System.out.println(dealership.getFinalPrice(skoda2));
 
         Car mercedes3 = new Car(20000, CarType.MERCEDES, 2019);
+        // new Offer -> clasa anonima dintr-o interfata
 //        System.out.println(dealership.getFinalPrice(mercedes3));
         dealership.negotiate(mercedes3, new Offer() {
             @Override
