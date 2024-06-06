@@ -1,5 +1,5 @@
 1)
-Creați clasa Emplyee cu urmatoarele proprietati:
+Creați clasa Employee cu urmatoarele proprietati:
 - name
 - baseSalary
 - yearsOfExperience
