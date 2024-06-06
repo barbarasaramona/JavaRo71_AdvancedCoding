@@ -3,10 +3,11 @@ package advancedCoding.mostenire_polimorfism;
 public class Programmer extends Employee{
 
     private double bonusOverTime;
-    public Programmer(String name, double baseSalary, double yearsOfExperience) {
+    public Programmer(String name, double baseSalary, Integer yearsOfExperience) {
         super(name, baseSalary, yearsOfExperience);
     }
-    public Programmer(String name, double baseSalary, double yearsOfExperience, double bonusOverTime) {
+
+    public Programmer(String name, double baseSalary, Integer yearsOfExperience, double bonusOverTime) {
         super(name, baseSalary, yearsOfExperience);
         this.bonusOverTime = bonusOverTime;
     }
@@ -17,9 +18,9 @@ public class Programmer extends Employee{
 
     @Override
     public double calculateSalary() {
-        if (bonusOverTime > 500 && this.yearsOfExperience >= 100 ){
+        System.out.print(this.name + ": ");
+        if (bonusOverTime > 500 && this.yearsOfExperience > 3)
             bonusOverTime = 500;
-        }
         return super.calculateSalary() + bonusOverTime;
     }
 

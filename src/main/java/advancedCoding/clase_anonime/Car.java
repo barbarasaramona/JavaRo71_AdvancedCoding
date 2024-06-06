@@ -1,7 +1,6 @@
 package advancedCoding.clase_anonime;
 
 public class Car {
-
     private double price;
     private CarType type;
     private int year;
@@ -10,6 +9,17 @@ public class Car {
         this.price = price;
         this.type = type;
         this.year = year;
+
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Car{");
+        sb.append("price=").append(price);
+        sb.append(", carType=").append(type);
+        sb.append(", year=").append(year);
+        sb.append('}');
+        return sb.toString();
     }
 
     public CarType getType() {
@@ -27,15 +37,4 @@ public class Car {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Car{");
-        sb.append("price=").append(price);
-        sb.append(", carType=").append(type);
-        sb.append(", year=").append(year);
-        sb.append('}');
-        return sb.toString();
-    }
-
 }

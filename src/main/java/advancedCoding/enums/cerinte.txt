@@ -1,0 +1,26 @@
+1) Create the TemperatureConvert enum class with constants C_F , C_K , K_C ,
+F_C , F_K , K_F . Enum should adopt a constructor that includes three
+parameters:
+- input temperature unit
+- output temperature unit
+- the Converter interface instance (with a float convert(float tempIn)
+method) - the instance should define the necessary calculations for temperature conversion
+
+The TemperatureConvert enum class should adopt the static
+convertTemperature method which will include the following params:
+- input temperature unit
+- output temperature unit
+- value of the temperature
+This method should return the converted value. To find the right constant from set of enum values,
+use the values() method.
+
+2) Crete an enum Weekday with constants MONDAY , TUESDAY , ... SUNDAY .
+The enum should contain boolean isWeekDay and boolean isHoliday methods.
+
+The isHoliday method should return the opposite result to the call of the isWeekDay method.
+Please implement the whichIsGreater method as a scope of the enum class. This method should accept an object
+of Weekday type. This method should display information that the indicated day of the week is the
+predecessor or successor of the day of the week passed as the method argument.
+Please consider using the compareTo method.
+
+Present the solution described above with an example.
