@@ -20,6 +20,7 @@ astfel incat sa fie realizata comunicarea de mai jos:
 (Thread 2) Great!
 
 //Deadlock
+
 2) Stiind ca un Deadlock descrie o situație în care două sau mai multe fire de executie sunt blocate pentru totdeauna,
 așteptându-se unul pe celălalt, sa se realizeze un program Java cu doua fire care ar putea intampina condiția de blocare
 deoarece firele de executie vor avea nevoie de aceleași resurse, dar le vor obține în ordine diferită.
