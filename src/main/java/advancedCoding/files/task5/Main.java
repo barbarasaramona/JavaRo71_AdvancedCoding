@@ -26,8 +26,8 @@ public class Main {
                 stringArray = line.split(", ");
                // User user1 = new User(stringArray[0], stringArray[1], Integer.parseInt(stringArray[2]));
                 User user1 = new User()
-                        .setFirstName(stringArray[0])
-                        .setLastName(stringArray[1])
+                        .setName(stringArray[0])
+                        .setSurname(stringArray[1])
                         .setAge(Integer.parseInt(stringArray[2]));
                 users.add(user1);
             }
@@ -49,8 +49,8 @@ public class Main {
 
             // Removing the last blank space
             for (int i = 0; i < users.size(); i++) {
-                sb.append(users.get(i).getFirstName()).append(", ")
-                  .append(users.get(i).getLastName()).append(", ")
+                sb.append(users.get(i).getName()).append(", ")
+                  .append(users.get(i).getSurname()).append(", ")
                   .append(users.get(i).getAge());
                 if (i < users.size() - 1) {
                     sb.append("\n");
